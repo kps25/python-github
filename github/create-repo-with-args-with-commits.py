@@ -38,7 +38,7 @@ try:
     os.system("mkdir " + repo_name)
     os.chdir(REPO_PATH + repo_name)
     os.system("git init")
-    os.system("git remote add origin https://github.com/kps25/" + repo_name + ".git")
+    os.system("git remote add origin https://github.com/user/" + repo_name + ".git")
     os.system("echo '#" + repo_name + "' >> README.md")
     os.system("git add . && git commit -m 'Intial Commit' && git branch -M main && git push origin main")
 
